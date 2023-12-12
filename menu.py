@@ -93,6 +93,8 @@ while place_order:
 
     # Check if the customer's input is a number
     if menu_category.isdigit():
+        if int(menu_category) in menu_items.keys():
+            print(f"You selected {menu_category_name}")
         # Check if the customer's input is a valid option
         if int(menu_category) in menu_items.keys():
             # Save the menu category name to a variable
